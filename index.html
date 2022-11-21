@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="color-options">
+    <input type="color" id="color" />
+    <div class="color-option" style="background-color: #F2DEBA" data-color="#F2DEBA"></div>
+    <div class="color-option" style="background-color: #FFEFD6" data-color="#FFEFD6"></div>
+    <div class="color-option" style="background-color: #0E5E6F" data-color="#0E5E6F"></div>
+    <div class="color-option" style="background-color: #7950f2" data-color="#7950f2"></div>
+    <div class="color-option" style="background-color: #E97777" data-color="#E97777"></div>
+    <div class="color-option" style="background-color: #FF9F9F" data-color="#FF9F9F"></div>
+    <div class="color-option" style="background-color: #FCDDB0" data-color="#FCDDB0"></div>
+    <div class="color-option" style="background-color: #FFFAD7" data-color="#FFFAD7"></div>
+    <div class="color-option" style="background-color: #DEF5E5" data-color="#DEF5E5"></div>
+    <div class="color-option" style="background-color: #BCEAD5" data-color="#BCEAD5"></div>
+    <div class="color-option" style="background-color: #9ED5C5" data-color="#9ED5C5"></div>
+    <div class="color-option" style="background-color: #8EC3B0" data-color="#8EC3B0"></div>
+  </div>
+  <canvas></canvas>
+  <div class="btns">
+    <input id="line-width" type="range" min="1" max="10" value="5" step="0.1" />
+    <button id="mode-btn">🖌 Fill</button>
+    <button id="destroy-btn">💣 Destroy</button>
+    <button id="eraser-btn">❌ Erase</button>
+    <label for="file">➕ Add Photo</label>
+    <input type="file" accept="image/*" multiple id="file" />
+    <input type="text" placeholder="✍ Add text here" id="text" />
+    <button id="save">🖼 Save Image</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
